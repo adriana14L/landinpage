@@ -232,7 +232,7 @@ p {
     font-size: 18px;
 }*/
 #nosotros{
-    background-image: url(/img/compuesta.jpg);
+    background-image: url(../img/compuesta.jpg);
     background-size: cover;
 }
 #nosotros p{
@@ -241,7 +241,7 @@ p {
     font-size: 16px;
 }
 #contactanos{
-    background-image: url(/img/compuesta.jpg);
+    background-image: url(../img/compuesta.jpg);
     background-size: cover;
 }
 #contactanos p{
