@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0
     /*Esta funcion sirve para*/
 }
 
@@ -9,6 +11,9 @@ body {
     /* font-family:"Fragment Mono" ;*/
     font-size: 16px;
     color: black;
+    line-height: 26px;
+
+   
 }
 
 a {
@@ -17,9 +22,9 @@ a {
 }
 
 header {
-    background-color: #8FD4ED;
+    background-color: #f5f8f9;
     position: fixed;
-    padding: 10px 0;
+    padding: 0px 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,19 +37,31 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 header .container .logo {
     /*la clase  logo esta dentro del container y el container en el header*/
-    width: 90px;
+    width: 230px;
+    
 
 }
 
 header .container nav a {
-    color: white;
+    font-family: 'Roboto Mono', monospace;
+    color: #8FD4ED;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 30px;
+    font-size: 18px;
+    
 }
+.container nav a:hover{
+    
+        color:#eda78f
+     
+}
+
 
 header .container .hambu {
     display: none;
@@ -56,15 +73,20 @@ footer {
 }
 
 footer .logo-footer {
-    width: 40%;
+    width: 50%;
 }
 
 footer .redes {
     justify-content: center;
+   
+}
+footer .redes i{
+    color: #0C8787;
+  
 }
 
 footer.seccion {
-    background-color: rgba(234, 96, 46, 0.906);
+    background-color:#8FD4ED;
     color: white;
     padding-bottom: 0;
 }
@@ -103,19 +125,42 @@ footer ul li {
     margin-bottom: 10px;
 }
 
+
 .boton {
     text-align: center;
     text-decoration: none;
     padding: 15px 30px;
     border: none;
+  
 }
 
-.boton.boton-rojo {
-    color: white;
-    background-color: red;
-    font-size: 20px;
+.boton.boton-blanco {
+    /*para el lemento boton rojo que tiene una clase boton rojo y al mismo tiempo clase boton*/
+    color: #25d366;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: bold;
+   
+    /*sirve para dar profundidad */
 }
+.WhatsApp{
+    background-color: #25d366;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 45% ;
+    border-radius: 30px;/*para darle un borde redondeado*/
+    position: absolute; 
+    width: 700px;
+    line-height: 30px;
+    left: 20%;
+    top: 180%;/**/
+    margin-left: -80px;
+  
+}
+
+
 
 .seccion {
     padding-top: 60px;
@@ -168,6 +213,34 @@ p {
     margin-left: -15px;
     margin-right: -15px;
 }
+.row .cont{
+    line-height: 70px;
+    color: #0C8787;
+    text-transform: lowercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+.row .contemail{
+    line-height: 40px;
+    color: #0C8787;
+    text-transform: lowercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.row h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    
+}
+.row p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+   
+}
+.row p:hover{
+   color: #0C8787;
+}
 
 .columna {
     padding-left: 15px;
@@ -194,46 +267,134 @@ p {
 
 #inicio {
     position: relative;
+     
 }
+ 
 
+/*#inicio img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    object-fit: cover;
+   
+}*/
 #inicio img {
     width: 100%;
     display: block;
-   /* opacity: 0.4;*/
 }
+
+ 
 
 #inicio .bloque-inicio {
     position: absolute;
     top: 20%;
     left: 50%;
-    width: 600px;
+    width: 900px;
     text-align: center;
-    margin-left: -300px;
+    margin-left: -400px;
 }
 
 #inicio .bloque-inicio h1 {
-    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15%;
     padding: 15px;
         background: rgba(0,0,0,.5);
         font-weight: 100;
         color: #fff;
         text-align: center;
         width: 100%;
-        font-size: 35px;
-        line-height: 1;
+        font-size: 45px;
+        line-height: 0.9em;
     
 }
-
-/*#inicio .bloque-inicio p {
-    background: rgba(0,0,0,.5);
-    font-weight: 100;
+h1{
+    font-size: 45px; 
+}
+.containerT{
+  /*  border: 5px solid red;*/
+    position: absolute; 
+    width: 900px;
+    left: 10%;
+    top: 95%;
+    margin-left: -100px;
+}
+ .containerT p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
     color: #fff;
+    line-height: 1.5em;
     text-align: center;
-    font-size: 18px;
-}*/
+}
+.containerT i{
+    margin: 10px;
+}
+
+
 #nosotros{
     background-image: url(../img/compuesta.jpg);
     background-size: cover;
+   
+  
+}
+#nosotros h2{
+   /* font-weight:normal;*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(12, 135, 135);
+    
+
+}
+
+#contactanos .containerh h3{
+    /* font-weight:normal;*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(12, 135, 135);
+    line-height: 1.5em;
+    margin-top: 0;
+
+
+}
+#contactanos .containerh{
+    margin-top: 15px;
+}
+.whatsAppP{
+   /*position: absolute; */
+   position: relative;
+}
+
+.seccion .whatsAppP{
+ 
+    margin-top: 32px;
+}
+ .btnWh{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+ }
+   .whatsAppP i{
+    margin: 10px;
+ }
+ #contactanos  .whatsAppP{
+    height: 10%!important;
+    border-radius: 30px;/*para darle un borde redondeado*/
+    background-color: #25d366;
+    position: absolute;
+    /*top: 50%;*/
+    height: 45% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
 }
 #nosotros p{
     color:blue ;
@@ -241,8 +402,12 @@ p {
     font-size: 16px;
 }
 #contactanos{
+
+   
     background-image: url(../img/compuesta.jpg);
     background-size: cover;
+   
+
 }
 #contactanos p{
     
@@ -251,11 +416,18 @@ p {
     font-size: 16px;
 }
 
-#servicios .bloque-servicio{
-    border: 1px solid grey;
-}
+
+
 #servicios .bloque-servicio .bloque-img-servicio img{
     width: 100%;
+    border-radius: 15px;
+  
+}
+.bloque-img-servicio img:hover{
+ filter: saturate(180%);
+ 
+  /*filter: opacity(.5);*/
+
 }
 #servicios .bloque-servicio .bloque-img-servicio .cuadrado-perfecto{
     padding-bottom: 26.25%;
@@ -265,7 +437,24 @@ p {
 }
 #servicios .bloque-servicio .bloque-contenido-servicio h3{
     margin-top: 0;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+ 
+    
+}
+#servicios .bloque-servicio .bloque-contenido-servicio i{
+    margin: 12px;
+ 
+    
+}
+#servicios .bloque-servicio .bloque-contenido-servicio p{
+    margin-top: 0;
+    color: hsl(220, 15%, 55%);
+    text-align: justify;
+
+   
+
 }
 #galeria h4{
     padding-right: 15px;
@@ -285,4 +474,61 @@ p {
 }
 #galeria .cuadrado-perfecto:hover h4{
     display: none;
+}
+
+@media (max-width: 767px){
+   body, p {
+  font-size: 12px;
+  line-height: 22px; 
+}
+header .container .hambu{
+    display: block;
+    font-size: 50px;
+    color: #8FD4ED;
+    
+}
+header .container nav{/*ocultaremos el nav(menu) solo cuando sea dispositivo movil*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 0;
+    left: 0;
+    display: flex;
+    /*flex direction esta por defecto como row*/
+    flex-direction: column;
+    /*trasladaremos hacia afuera*/
+    transition: all 0.4s ease;/*se traslada hacia afuera de la parte visible*/
+    transform: translateX(100%);/**/
+    
+}
+header .container nav.open{/*mostraremos el nav(menu) solo cuando sea dispositivo movil*/
+    transform: translateX(0);/*LO REGRESAMOS A SU POSICION ORIGINAL*/
+    
+}
+header .container nav a{/*para que crescan mas*/
+    font-size: 30px;
+    margin:15px 0;
+
+ }
+ 
+.container{
+    width: 100%;
+}
+#inicio{
+    height: 100vh;/*alto del dispositivo vh*/
+} 
+#inicio img{
+    width:100vw;
+     object-fit: contain;
+     object-position: center;
+     margin-top: 10%;
+     
+} 
+
+
 }
